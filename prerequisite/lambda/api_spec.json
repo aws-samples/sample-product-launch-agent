@@ -1,0 +1,43 @@
+[
+    {
+        "name": "check_regulatory_compliance",
+        "description": "Check regulatory compliance requirements for financial products by region. Returns federal and state regulations, required licenses, and compliance timeline.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "product_type": {
+                    "type": "string",
+                    "description": "Type of financial product (e.g., auto_loan, personal_loan, credit_card)"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Country or state code (e.g., US, US-CA, UK)"
+                }
+            },
+            "required": [
+                "product_type",
+                "region"
+            ]
+        }
+    },
+    {
+        "name": "get_product_performance",
+        "description": "Get existing product performance data including margins, market share, customer satisfaction, and strategic vision from enterprise database.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "product_id": {
+                    "type": "string",
+                    "description": "Product identifier (e.g., AUTO_LOAN_2023, PERSONAL_LOAN_PRIME)"
+                },
+                "include_vision": {
+                    "type": "boolean",
+                    "description": "Include strategic vision and roadmap"
+                }
+            },
+            "required": [
+                "product_id"
+            ]
+        }
+    }
+]
