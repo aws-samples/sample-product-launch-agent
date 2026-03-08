@@ -9,7 +9,7 @@ console = Console()
 boto_session = Session()
 region = boto_session.region_name
 
-async def run_browser_task(prompt, region="us-west-2"):
+async def run_browser_task(prompt, region="us-east-1"):
     client = None
     try:
         console.print("[cyan]Starting AgentCore browser...[/cyan]")
@@ -59,6 +59,6 @@ async def run_browser_task(prompt, region="us-west-2"):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--prompt", required=True)
-    parser.add_argument("--region", default="us-west-2")
+    parser.add_argument("--region", default="us-east-1")
     args = parser.parse_args()
     asyncio.run(run_browser_task(args.prompt, args.region))
