@@ -192,7 +192,7 @@ def _deep_research(query: str) -> Dict[str, Any]:
         """
         
         response = bedrock.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0'),
+            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0'),
             body=json.dumps({
                 "anthropic_version": "bedrock-2023-05-31",
                 "max_tokens": 2000,

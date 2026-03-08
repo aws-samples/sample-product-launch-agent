@@ -10,7 +10,7 @@ from strands_financial_agent import research_market_data
 from enhanced_tools import browse_web, real_time_market_research
 from marketing_tools import create_marketing_poster
 
-MODEL_ID = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+MODEL_ID = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 
 # System prompt defining the agent's role and capabilities
 SYSTEM_PROMPT = """You are an expert financial product launch assistant helping product managers and marketing teams launch new financial products.

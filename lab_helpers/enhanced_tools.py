@@ -115,7 +115,7 @@ def enhanced_compliance_check(product_type: str) -> Dict[str, Any]:
         """
         
         response = bedrock_runtime.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-5-sonnet-20241022-v2:0'),
+            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0'),
             body=json.dumps({
                 "anthropic_version": "bedrock-2023-05-31",
                 "max_tokens": 2000,
@@ -175,7 +175,7 @@ def ai_strategy_planning(product_type: str, market_data: Dict[str, Any], complia
         """
         
         response = bedrock_runtime.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-5-sonnet-20241022-v2:0'),
+            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0'),
             body=json.dumps({
                 "anthropic_version": "bedrock-2023-05-31",
                 "max_tokens": 3000,
@@ -238,7 +238,7 @@ def ai_website_deployment(product_type: str, strategy_data: Dict[str, Any], mark
         """
         
         response = bedrock_runtime.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-5-sonnet-20241022-v2:0'),
+            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0'),
             body=json.dumps({
                 "anthropic_version": "bedrock-2023-05-31",
                 "max_tokens": 4000,
@@ -296,7 +296,7 @@ def ai_website_deployment(product_type: str, strategy_data: Dict[str, Any], mark
         """
         
         infra_response = bedrock_runtime.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-5-sonnet-20241022-v2:0'),
+            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0'),
             body=json.dumps({
                 "anthropic_version": "bedrock-2023-05-31",
                 "max_tokens": 2000,
@@ -357,7 +357,7 @@ def real_time_market_research(query: str) -> Dict[str, Any]:
         """
         
         response = bedrock_runtime.invoke_model(
-            modelId=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-5-sonnet-20241022-v2:0'),
+            modelId=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0'),
             body=json.dumps({
                 "anthropic_version": "bedrock-2023-05-31",
                 "max_tokens": 2500,

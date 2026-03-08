@@ -46,7 +46,7 @@ Build a functional product launch agent with three tools:
 **Prerequisites**:
 - AWS Account with Bedrock access
 - Python 3.10+
-- Claude 3.7 Sonnet enabled in Bedrock
+- Claude Haiku 4.5 enabled in Bedrock
 - Tavily API Key
 
 

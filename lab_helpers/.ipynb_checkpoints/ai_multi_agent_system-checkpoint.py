@@ -34,7 +34,7 @@ from unified_market_research import market_research
 # AI-Enhanced Market Research Agent
 market_agent = Agent(
     name="AIMarketResearchAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Market Research Specialist using Tavily for real-time web research and Bedrock analysis.
     
     PRIMARY TOOL: Use research_market_data for comprehensive market research - this uses Tavily API for real-time web search.
@@ -52,7 +52,7 @@ market_agent = Agent(
 # AI-Enhanced Compliance Agent
 compliance_agent = Agent(
     name="AIComplianceAgent", 
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Compliance Specialist using real-time regulatory data and Bedrock analysis.
     Use enhanced_compliance_check for live regulatory research and AI-powered compliance analysis.
     Browse regulatory websites for current requirements.""",
@@ -62,7 +62,7 @@ compliance_agent = Agent(
 # AI-Enhanced Strategy Agent
 strategy_agent = Agent(
     name="AIStrategyAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Strategy Specialist using real-time competitive data and Bedrock planning.
     Use ai_strategy_planning for AI-generated strategic insights based on live market data.
     Browse competitor sites for real-time positioning analysis.""",
@@ -72,7 +72,7 @@ strategy_agent = Agent(
 # AI-Enhanced Deployment Agent
 deployment_agent = Agent(
     name="AIDeploymentAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Deployment Specialist using Bedrock for dynamic website generation.
     Use ai_website_deployment for AI-generated websites and infrastructure.
     Use create_product_website to build professional HTML websites for financial products.
@@ -83,7 +83,7 @@ deployment_agent = Agent(
 # AI-Enhanced Marketing Agent
 marketing_agent = Agent(
     name="AIMarketingAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Marketing Specialist using Amazon Nova Canvas for visual content creation.
     
     CRITICAL REQUIREMENT: Generate ONLY ONE marketing poster per request using create_marketing_poster.
@@ -140,7 +140,7 @@ def delegate_to_ai_marketing_agent(query: str) -> Dict[str, Any]:
 # AI-Enhanced Orchestrator Agent
 ai_orchestrator_agent = Agent(
     name="AIOrchestratorAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are the AI-Enhanced Orchestrator - the BRAIN and SUPERVISOR for all financial product tasks.
 
     🧠 **YOUR ROLE AS ORCHESTRATOR**:

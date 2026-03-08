@@ -1334,7 +1334,7 @@ def generate_marketing_poster(product_type: str, competitive_rate: str, differen
 # Create the enhanced Strands agent
 financial_agent = Agent(
     name="FinancialProductLaunchAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'anthropic.claude-3-5-sonnet-20240620-v1:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are a Financial Product Launch Agent for a financial organization that helps launch new financial products from inception to live customer websites.
 
 🏦 **YOU ARE A FINANCIAL ORGANIZATION'S AI ASSISTANT**:

@@ -22,7 +22,7 @@ from lab_helpers.lab2_memory import (
 boto_session = Session()
 region = boto_session.region_name
 
-MODEL_ID = "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
+MODEL_ID = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 
 SYSTEM_PROMPT = """You are an expert financial product launch assistant.
 

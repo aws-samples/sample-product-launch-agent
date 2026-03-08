@@ -15,7 +15,7 @@ from lab_helpers.marketing_tools import create_marketing_poster
 # AI-Enhanced Market Research Agent
 market_agent = Agent(
     name="AIMarketResearchAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Market Research Specialist.
     
     Use market_research for comprehensive market analysis including:
@@ -32,7 +32,7 @@ market_agent = Agent(
 # AI-Enhanced Compliance Agent
 compliance_agent = Agent(
     name="AIComplianceAgent", 
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Compliance Specialist.
     Use browse_web to research regulatory requirements and compliance frameworks for financial products.""",
     tools=[browse_web]
@@ -41,7 +41,7 @@ compliance_agent = Agent(
 # AI-Enhanced Strategy Agent
 strategy_agent = Agent(
     name="AIStrategyAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Strategy Specialist.
     Use market_research and browse_web to develop strategic insights and competitive positioning.""",
     tools=[market_research, browse_web]
@@ -50,7 +50,7 @@ strategy_agent = Agent(
 # AI-Enhanced Deployment Agent
 deployment_agent = Agent(
     name="AIDeploymentAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Deployment Specialist.
     Use browse_web to research best practices for product deployment and launch strategies.""",
     tools=[browse_web]
@@ -59,7 +59,7 @@ deployment_agent = Agent(
 # AI-Enhanced Marketing Agent
 marketing_agent = Agent(
     name="AIMarketingAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are an AI-powered Marketing Specialist using Amazon Nova Canvas.
     
     Use create_marketing_poster to generate marketing materials with:
@@ -105,7 +105,7 @@ def delegate_to_ai_marketing_agent(query: str) -> Dict[str, Any]:
 # AI-Enhanced Orchestrator Agent
 ai_orchestrator_agent = Agent(
     name="AIOrchestratorAgent",
-    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-3-5-sonnet-20241022-v2:0')),
+    model=BedrockModel(model_id=os.getenv('BEDROCK_MODEL_ID', 'us.anthropic.claude-haiku-4-5-20251001-v1:0')),
     system_prompt="""You are the AI-Enhanced Orchestrator - the BRAIN and SUPERVISOR for all financial product tasks.
 
     🧠 **YOUR ROLE AS ORCHESTRATOR**:
